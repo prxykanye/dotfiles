@@ -109,11 +109,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="nvim"
-alias vi="nvim"
-alias chezmoi="~/.local/bin/chezmoi"
+alias vim="~/apps/nvim-linux-x86_64/bin/nvim"
+alias vi="~/apps/nvim-linux-x86_64/bin/nvim"
 
-export EDITOR="nvim"
+export EDITOR="~/apps/nvim-linux-x86_64/bin/nvim"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
