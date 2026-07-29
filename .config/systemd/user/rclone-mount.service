@@ -1,0 +1,13 @@
+[Unit]
+Description=Rclone mount for WebDAV
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rclone mount YandexDisk: /home/prxy/YandexDisk --vfs-cache-mode writes --allow-other
+ExecStop=/usr/bin/fusermount -u /home/prxy/YandexDisk
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
