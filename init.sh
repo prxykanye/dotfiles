@@ -1,1 +1,1 @@
-pacman -Suy nvim stow tmux npm lazygit
+pacman -Suy nvim stow tmux npm lazygit yazi
