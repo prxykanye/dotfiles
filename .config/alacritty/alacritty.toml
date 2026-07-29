@@ -1,0 +1,18 @@
+[terminal]
+
+shell = { program = "/bin/tmux" }
+
+[window]
+
+startup_mode = "Maximized"
+
+opacity = 0.9
+
+padding.x = 10
+padding.y = 10
+
+decorations = "Full"
+
+[font]
+
+size = 15.0
