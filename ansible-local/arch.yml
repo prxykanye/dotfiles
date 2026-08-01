@@ -37,5 +37,4 @@
         name:
           - visual-studio-code-bin
           - python311
-          - github-markdown-toc
         state: present
