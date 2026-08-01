@@ -1,0 +1,41 @@
+- hosts: localhost
+  become: true
+  connection: local
+
+  tasks:
+    - name: Install pacman packages
+      community.general.pacman:
+        name:
+          - git
+          - neovim
+          - docker
+          - firefox
+          - zsh
+          - stow
+          - tmux
+          - npm
+          - lazygit
+          - yazi
+          - sshfs
+          - postgresql
+          - prettier
+          - yay
+          - markdownlint-cli2
+          - ast-grep
+          - sqlfluff
+          - luarocks
+          - rust
+          - composer
+          - php
+          - julia
+          - python-pip
+        state: present
+
+    - name: Install AUR packages
+      kewlfft.aur.aur:
+        use: yay
+        name:
+          - visual-studio-code-bin
+          - python311
+          - github-markdown-toc
+        state: present
