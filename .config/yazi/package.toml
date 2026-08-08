@@ -8,5 +8,10 @@ use = "terrakok/split-tabs"
 rev = "da25bc0"
 hash = "108ee3048ba3a0d1ba77df7c41bcb7fe"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = "b9598e6"
+hash = "5b1c276b75cae91cbbdbe7863f39a540"
+
 [flavor]
 deps = []
