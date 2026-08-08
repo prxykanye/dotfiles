@@ -9,10 +9,13 @@
           - git
           - neovim
           - docker
+          - docker-compose
+          - docker-buildx
           - firefox
-          - zsh
           - stow
           - tmux
+          - rclone
+          - ripgrep
           - npm
           - lazygit
           - yazi
@@ -29,12 +32,9 @@
           - php
           - julia
           - python-pip
-        state: present
-
-    - name: Install AUR packages
-      kewlfft.aur.aur:
-        use: yay
-        name:
-          - visual-studio-code-bin
-          - python311
+          - tree
+          - tail-tray
+          - tailscale
+          - torbrowser-launcher
+          - telegram-desktop
         state: present
